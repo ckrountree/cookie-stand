@@ -21,12 +21,14 @@ var StoreFront = function (cookieNum, customersMin, customersMax, storeName) {
 
     StoreFront.prototype.hoursOp = ['6am', '7am', '8am','9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
-//  Calculate the number of customers per hour and the number of cookies purchased per hour
+//  Calculate the number of avergae customers per hour
 
     StoreFront.prototype.calcCustomersPerHour = function() {
 
         return Math.floor(Math.random() * (this.customersHourlyMax - this.customersHourlyMin) + this.customersHourlyMin);
     }
+
+//  Calculate the number of cookies purchased per hour
 
     StoreFront.prototype.calcCookiesPerHour = function() {
         this.cookiesPerHour = []; 
@@ -40,9 +42,3 @@ var StoreFront = function (cookieNum, customersMin, customersMax, storeName) {
         }
     }
 
-
-         
-        console.log('this worked');
-    
-
-   
