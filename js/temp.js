@@ -48,8 +48,6 @@ var StoreFront = function (cookieNum, customersMin, customersMax, cookieSales, s
         return Math.random(this.calcCustomersPerHour() * this.avgCookiesPerSale);
     }
             console.log('total cookies sold per store');
-
-//  checking the save
     
 
 
